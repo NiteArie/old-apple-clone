@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.hero {
+    background-image: url("assets/your_verse_hero.jpg");
+    max-width: 1440px;
+    margin: auto auto;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    border: 1px solid white;
+}
+
+.hero__nav__list {
+    display: flex;
+    width: 950px;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.hero__nav__list li {
+    width: 100px;
+    height: 40px;
+    background-color: grey;
+    background-image: linear-gradient(
+        0deg,
+        rgb(104, 104, 104),
+        rgb(94, 94, 94) 50%,
+        rgb(112, 112, 112) 50%,
+        rgb(141, 141, 141)
+    );
+    border-right: 1px solid hsla(0, 0%, 0%, 0.3);
+}
+
+.hero__nav__list li:hover {
+    background-image: radial-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.3));
+}
+
+
+.hero__nav__list .hero__nav__list__search {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero__nav__list__search__container {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(130, 130, 130, 0.10);
+    display: flex;
+    border: 1px solid black;
+    box-shadow: inset 0 1px 1px 1px rgb(48, 48, 48), inset 0 -1px 1px 1px rgb(128, 128, 128);
+}
+
+.hero__nav__list__search__container img {
+    width: 13px;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.hero__nav__list .hero__nav__list__search:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgb(104, 104, 104),
+        rgb(94, 94, 94) 50%,
+        rgb(112, 112, 112) 50%,
+        rgb(141, 141, 141)
+    );
+}
+
+
+.hero__nav__list .hero__nav__list__search .search {
+    width: 100%;
+    background-color: rgba(130, 130, 130, 0.10);
+    border: none;
+    padding: 2px;
+}
+
+
+.hero__nav__list .hero__nav__list__search .search:focus {
+    outline: none;
+}
+
+.hero__nav__list li a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-image: url("assets/globalnav_text.svg");
+    background-position-x: center;
+}
+
+.hero__nav__list a.apple-i {
+    background-position-y: 5px;
+}
+
+.hero__nav__list a.store-i {
+    background-position-y: -25px;
+}
+
+.hero__nav__list a.mac-i {
+    background-position-y: -55px;
+}
+
+.hero__nav__list a.ipod-i {
+    background-position-y: -85px;
+}
+
+.hero__nav__list a.iphone-i {
+    background-position-y: -115px;
+}
+
+.hero__nav__list a.ipad-i {
+    background-position-y: -145px;
+}
+
+.hero__nav__list a.itunes-i {
+    background-position-y: -175px;
+}
+
+
+.hero__nav__list a.support-i {
+    background-position-y: -205px;
+}
+
+.hero__content__title  {
+    background-image: url("assets/your_verse_title_medium.png");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.hero__content__subtitle {
+    background-image: url("assets/your_verse_subhead_medium.png");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.hero__content__cta {
+    width: 900px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.hero__content__cta a {
+    display: block;
+}
+
+.hero__content__cta a img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 30px;
+}
+
+.hero__content__cta a:hover img {
+    object-position: bottom;
+}
+
+.hero__panels {
+    display: flex;
+    width: 1440px;
+    height: 200px;
+    margin: 5px auto;
+}
+
+.hero__panels__panel {
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero__panels__iphone5s {
+    background-image: url("assets/promo_iphone5s.jpg");
+}
+
+.hero__panels__iphone5c {
+    background-image: url("assets/promo_iphone5c.jpg");
+}
+
+.hero__panels__birthday {
+    background-image: url("assets/promo_30_years.jpg");
+}
+
+.hero__panels__supplier {
+    background-image: url("assets/promo_supplier_responsibility.jpg");
+}
+
+/* Footer */
+
+.footer {
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-around;
+}
+
+.footer a {
+    text-decoration: none;
+    color: hsl(220, 50%, 50%);
+}
+
+.footer__left p {
+    margin-bottom: 20px;
+}
